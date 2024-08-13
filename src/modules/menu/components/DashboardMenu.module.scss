@@ -1,3 +1,37 @@
 .menu {
-  background-color: $main-bg-color;
+  max-width: 306px;
+  background-color: $light-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuDashboard {
+  padding-top: 65px;
+  padding-left: 39px;
+  @include font(14, 16.8);
+  color: $dasboard-text-color;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: $dasboard-text-color;
+    fill: none;
+  }
+}
+
+.menuList {
+  padding-top: 40px;
+  padding-left: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 40px;
 }

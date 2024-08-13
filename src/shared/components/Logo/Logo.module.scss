@@ -1,0 +1,27 @@
+.logo {
+  padding-top: 37px;
+  padding-left: 28px;
+
+  & svg {
+    width: 37px;
+    height: 37px;
+    fill: $primary-text-color;
+  }
+}
+
+.logoLink {
+  @include font(26, 31.2);
+  color: $primary-text-color;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoTextVersion {
+  @include font(10, 12);
+  color: $version-text-color;
+  letter-spacing: -0.01em;
+  margin-left: 4px;
+}
