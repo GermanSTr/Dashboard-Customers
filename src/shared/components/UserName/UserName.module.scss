@@ -1,0 +1,24 @@
+.user {
+  padding-left: 28px;
+  padding-bottom: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.userIMG {
+  width: 42px;
+  height: 42px;
+}
+
+.userName {
+  @include font(14, 16.8);
+  letter-spacing: 0.01px;
+}
+
+.userPosition {
+  @include font(12, 14.4);
+  letter-spacing: 0.01px;
+  color: $position-text-color;
+}

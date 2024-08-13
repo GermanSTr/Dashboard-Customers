@@ -1,0 +1,13 @@
+.section {
+}
+
+.sectionTitle {
+  padding-top: 41px;
+  padding-left: 71px;
+  @include font(24, 28.8);
+}
+
+.sectionBlock {
+  padding-top: 51px;
+  padding-left: 71px;
+}

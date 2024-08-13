@@ -1,0 +1,17 @@
+.content {
+  width: 968px;
+  height: 812px;
+  background-color: $light-color;
+}
+
+.contentTitle {
+  @include font(22, 26.4);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.contentText {
+  @include font(14, 16.8);
+  letter-spacing: -0.01em;
+  color: #16c098;
+}

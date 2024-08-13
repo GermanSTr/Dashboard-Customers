@@ -1,0 +1,38 @@
+.link {
+  width: 250px;
+  height: 46px;
+  padding: 11px 15px 11px 11px;
+  @include font(14, 16.8);
+  color: $dasboard-text-color;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    background-color: $focus-bg-color;
+    border-radius: 8px;
+    color: $light-color;
+
+    svg {
+      stroke: $light-color;
+    }
+  }
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: $dasboard-text-color;
+    fill: none;
+  }
+}
+
+.linkIconTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
