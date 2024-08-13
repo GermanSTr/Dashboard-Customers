@@ -1,0 +1,13 @@
+@import './s';
+
+$fontPath: '../fonts';
+
+@font-face {
+  font-family: $main-font-family;
+  src:
+    url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+    url('../fonts/poppins-regular-webfont.woff') format('woff'),
+    url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
