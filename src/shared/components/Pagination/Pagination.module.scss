@@ -1,0 +1,37 @@
+.pagination {
+  padding: 30px 40px 40px 0;
+  display: flex;
+  gap: 12px;
+
+  & a {
+    display: block;
+    padding: 6px 9px;
+    border: 1px solid $border-grey-color;
+    border-radius: 4px;
+    @include font(12, 12);
+    color: #404b52;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    background-color: #f5f5f5;
+  }
+
+  & svg {
+    stroke: #404b52;
+  }
+}
+
+.pagination li a:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination li.active a {
+  background-color: $focus-bg-color;
+  border-radius: 4px;
+  border: 1px solid $focus-bg-color;
+  color: #fff;
+}
+
+.pagination li.disabled a {
+  color: #ccc;
+  pointer-events: none;
+}
