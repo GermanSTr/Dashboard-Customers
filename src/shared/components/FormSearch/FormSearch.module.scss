@@ -1,0 +1,43 @@
+.form {
+  padding: 44px 53px 49px 0;
+}
+
+.formWrap {
+  position: relative;
+}
+
+.formWrapSearch {
+  width: 216px;
+  height: 38px;
+  border-radius: 10px;
+  border: none;
+  outline: transparent;
+  background-color: $main-bg-color;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include font(12, 14.4);
+  letter-spacing: -0.01em;
+  color: $secondary-text-color;
+
+  &::placeholder {
+    @include font(12, 14.4);
+    letter-spacing: -0.01em;
+    color: $secondary-text-color;
+  }
+
+  &:focus {
+    border-color: $focus-bg-color;
+  }
+}
+
+.formWrapIcon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  stroke: #7e7e7e;
+  fill: none;
+}

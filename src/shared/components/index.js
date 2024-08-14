@@ -6,3 +6,7 @@ export { default as SharedLayout } from './SharedLayout/SharedLayout.jsx';
 export { default as Loader } from './Loader/Loader.jsx';
 export { default as UserName } from './UserName/UserName.jsx';
 export { default as AllCustomers } from './AllCustomers/AllCustomers.jsx';
+export { default as FormSearch } from './FormSearch/FormSearch.jsx';
+export { default as CustomersTable } from './CustomersTable/CustomersTable.jsx';
+export { default as StatusUser } from './StatusUser/StatusUser.jsx';
+export { default as Pagination } from './Pagination/Pagination.jsx';
