@@ -5,6 +5,7 @@ import { globalStylesOptions } from './global.styles';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/Dashboard-Customers/',
   resolve: {
     alias: {
       modules: '/src/modules',
