@@ -7,7 +7,7 @@
 }
 
 .formWrapSearch {
-  width: 216px;
+  width: 100px;
   height: 38px;
   border-radius: 10px;
   border: none;
@@ -29,6 +29,14 @@
   &:focus {
     border-color: $focus-bg-color;
   }
+
+  @include media(tablet) {
+    width: 150px;
+  }
+
+  @include media(desktop) {
+    width: 216px;
+  }
 }
 
 .formWrapIcon {
@@ -36,8 +44,11 @@
   left: 8px;
   top: 50%;
   transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  stroke: #7e7e7e;
-  fill: none;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    stroke: #7e7e7e;
+    fill: none;
+  }
 }

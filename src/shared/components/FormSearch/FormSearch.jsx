@@ -12,8 +12,8 @@ const FormSearch = () => {
           name="search"
           required
         />
-        <button type="button">
-          <svg className={s.formWrapIcon}>
+        <button type="submit" className={s.formWrapIcon}>
+          <svg>
             <use href={sprite + '#icon-search'}></use>
           </svg>
         </button>

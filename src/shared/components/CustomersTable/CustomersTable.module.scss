@@ -1,9 +1,17 @@
 .gridContainerName {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(9, auto);
   padding-left: 38px;
   padding-right: 44px;
+
+  @include media(desktop) {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, auto);
+    padding-left: 38px;
+    padding-right: 44px;
+  }
 }
 
 .gridItemHeader {
@@ -18,6 +26,31 @@
   margin-right: -44px;
   display: flex;
   align-items: center;
+  word-break: break-word;
+}
+
+.gridItemHeaderNone {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.gridItemHeaderDesktop {
+  display: none;
+
+  @include media(desktop) {
+    @include font(14, 16.8);
+    font-weight: 500;
+    color: $secondary-text-color;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 14px;
+    padding-left: 38px;
+    margin-left: -38px;
+    margin-right: -44px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .gridItem {
@@ -30,6 +63,22 @@
   display: flex;
   align-items: center;
 }
+
+.gridItemDesktop {
+  display: none;
+
+  @include media(desktop) {
+    @include font(14, 16.8);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    border-bottom: 1px solid #eee;
+    color: #292d32;
+    padding: 24px 0 24px 0;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .gridItemStatus {
   @include font(14, 16.8);
   font-weight: 500;

@@ -1,9 +1,17 @@
 .menu {
-  max-width: 306px;
-  background-color: $light-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: none;
+
+  @include media(tablet) {
+    max-width: 250px;
+    background-color: $light-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @include media(desktop) {
+    max-width: 306px;
+  }
 }
 
 .menuDashboard {

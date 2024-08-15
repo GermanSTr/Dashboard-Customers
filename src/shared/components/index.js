@@ -10,3 +10,4 @@ export { default as FormSearch } from './FormSearch/FormSearch.jsx';
 export { default as CustomersTable } from './CustomersTable/CustomersTable.jsx';
 export { default as StatusUser } from './StatusUser/StatusUser.jsx';
 export { default as Pagination } from './Pagination/Pagination.jsx';
+export { default as MobileMenu } from './MobileMenu/MobileMenu.jsx';
