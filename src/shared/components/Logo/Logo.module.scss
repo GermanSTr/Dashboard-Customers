@@ -1,11 +1,29 @@
 .logo {
   padding-top: 37px;
-  padding-left: 28px;
+  padding-left: 14px;
 
   & svg {
     width: 37px;
     height: 37px;
     fill: $primary-text-color;
+  }
+
+  @include media(tablet) {
+    padding-left: 14px;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  @include media(desktop) {
+    padding-left: 28px;
+
+    & svg {
+      width: 37px;
+      height: 37px;
+    }
   }
 }
 
@@ -17,6 +35,14 @@
   display: flex;
   align-items: center;
   gap: 8px;
+
+  @include media(tablet) {
+    @include font(20, 24);
+  }
+
+  @include media(desktop) {
+    @include font(26, 31.2);
+  }
 }
 
 .logoTextVersion {

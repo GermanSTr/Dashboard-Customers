@@ -8,7 +8,7 @@ import 'modern-normalize';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="Dashboard-Customers">
       <App />
     </BrowserRouter>
   </React.StrictMode>

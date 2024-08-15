@@ -1,10 +1,8 @@
-@import './variables';
 @import './colors';
+@import './fonts';
 
 :root {
-  font-family:
-    #{$main-font-family},
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
 
   color: $primary-text-color;
@@ -55,16 +53,7 @@ button {
   background: none;
   cursor: pointer;
   transition: border-color 0.25s;
-
-  &:active {
-    transform: scale(0.95);
-  }
 }
-
-// button:focus,
-// button:focus-visible {
-//   outline: 4px auto -webkit-focus-ring-color;
-// }
 
 img {
   display: block;

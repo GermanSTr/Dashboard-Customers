@@ -28,6 +28,14 @@
     stroke: $dasboard-text-color;
     fill: none;
   }
+
+  @include media(tablet) {
+    width: 180px;
+  }
+
+  @include media(desktop) {
+    width: 250px;
+  }
 }
 
 .linkIconTitle {
